@@ -7,7 +7,7 @@ class FluentState():
 
     """
 
-    def __init__(self, pos_list, neg_list):
+    def __init__(self, pos_list: object, neg_list: object) -> object:
         self.pos = pos_list
         self.neg = neg_list
 
@@ -34,7 +34,7 @@ def conjunctive_sentence(pos_list, neg_list):
     return associate('&', clauses)
 
 
-def encode_state(fs: FluentState, fluent_map: list) -> str:
+def encode_state(fs: object, fluent_map: object) -> object:
     """ encode fluents to a string of T/F using mapping
 
     :param fs: FluentState object
@@ -50,7 +50,7 @@ def encode_state(fs: FluentState, fluent_map: list) -> str:
     return "".join(state_tf)
 
 
-def decode_state(state: str, fluent_map: list) -> FluentState:
+def decode_state(state: object, fluent_map: object) -> object:
     """ decode string of T/F as fluent per mapping
 
     :param state: str eg. "TFFTFT" string of mapped positive and negative fluents

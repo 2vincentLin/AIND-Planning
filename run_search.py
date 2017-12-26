@@ -49,7 +49,7 @@ class PrintableProblem(InstrumentedProblem):
         return '{:^10d}  {:^10d}  {:^10d}'.format(self.succs, self.goal_tests, self.states)
 
 
-def run_search(problem, search_function, parameter=None):
+def run_search(problem: object, search_function: object, parameter: object = None) -> object:
 
     start = timer()
     ip = PrintableProblem(problem)

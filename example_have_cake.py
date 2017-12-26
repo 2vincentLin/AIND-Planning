@@ -129,6 +129,7 @@ if __name__ == '__main__':
     for g in p.goal:
         print('   {}'.format(g))
     print()
+
     print("*** Breadth First Search")
     run_search(p, breadth_first_search)
     print("*** Depth First Search")
